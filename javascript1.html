@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <Script>
+        // debe ingresarse tres numeros por teclado e informar si alguno es menor a 10
+        const numeroConsola = [];
+        for (let i = 0; i < 3; i++) {
+            var numero = parseInt(prompt(`Ingresa un numero cualquiera ${i+1}`));
+            numeroConsola.push(numero);
+        }
+        const min = Math.min(...numeroConsola);
+        min < 10 ? document.write("Alguno de los numeros es menor a 10") : document.write("Ningun numero es menor o igual que 10");
+    </Script>
+</body>
+
+</html>

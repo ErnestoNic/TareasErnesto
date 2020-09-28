@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <Script>
+        //Se solicitan 10 numeros por teclado y se suman los ultimos 5
+        var total = 0;
+        for (let i = 0; i < 10; i++) {
+            var numero = parseInt(prompt(`Ingresa algun numero ${i+1}`));
+            if (i > 4) {
+                total = total + numero
+            }
+        }
+        document.write(`La suma de los últimos 5 digitos es ${total}`);
+    </Script>
+</body>
+
+</html>

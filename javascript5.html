@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+    <script>
+        const numerosConsola = [];
+        var pares = 0;
+        var impares = 0;
+        var otros = 0;
+
+        for (let i = 0; i < 5; i++) {
+            var numero = parseInt(prompt(`Ingresa el numero ${i+1}`));
+            numerosConsola.push(numero);
+            if (numerosConsola[i] != 0 && numerosConsola[i] % 2 == 0) {
+                pares++;
+            } else if (numerosConsola[i] != 0 && numerosConsola[i] % 2 != 0) {
+                impares++;
+            } else {
+                otros++;
+            }
+
+
+        }
+        document.write(`Ha ingresado ${pares} valores enteros pares; ${impares} valores enteros impares y ${otros} veces el 0 que no es par/impar <br>`);
+    </script>
+</body>
+
+</html>

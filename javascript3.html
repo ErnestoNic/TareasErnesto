@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+    <script>
+        // se deben ingresar 10 numeros. Debe conocerce cant de negativos, positivos, multiplos de 15, acumulado de pares
+        const numerosIngresados = [];
+        var positivos = 0;
+        var negativos = 0;
+        var multQuince = 0;
+        var suma = 0;
+        for (let index = 0; index < 10; index++) {
+            var numero = parseInt(prompt(`Ingresa el numero ${index+1}`));
+            numerosIngresados.push(numero);
+            if (numerosIngresados[index] < 0) {
+                negativos++;
+            } else {
+                positivos++;
+            }
+            if (numerosIngresados[index] != 0 && numerosIngresados[index] % 15 == 0) {
+                multQuince++;
+            }
+            if (numerosIngresados[index] % 2 == 0) {
+                suma = suma + numerosIngresados[index];
+            }
+
+        }
+        document.write(`${positivos} valores positivos y  ${negativos} valores negativos <br>`);
+        document.write(`Se han ingresado ${multQuince} numeros que son múltiplos de quince <br>`);
+        document.write(`Acumulado de numeros pares es  ${suma} <br>`);
+    </script>
+</body>
+
+</html>
